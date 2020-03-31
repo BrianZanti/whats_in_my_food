@@ -1,0 +1,10 @@
+<h3 id="result-count"><%= @result_count %></h3>
+
+<% @foods.each do |food| %>
+  <section class="food">
+    <p class="upc"><%= food.gtin_upc %></p>
+    <p class="description"><%= food.description %></p>
+    <p class="brand-owner"><%= food.brand_owner %></p>
+    <p class="ingredients"><%= food.ingredients %></p>
+  </section>
+<% end %>
